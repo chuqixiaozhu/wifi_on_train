@@ -79,8 +79,8 @@ for i=2:k
         %Finalf(i)=Finalb(i);
     %end
 end
-disp('s old =');
-disp(s);
+% disp('s old =');
+% disp(s);
 
 % i=k-1;
 % while i>=1
@@ -164,14 +164,14 @@ for i=2:k
     end
 end
 
-disp('Originalb = ')
-disp(Originalb)
-disp('Originalf = ')
-disp(Originalf)
-disp('Finalf = ')
-disp(Finalf)
-disp('ss =')
-disp(ss)
+% disp('Originalb = ')
+% disp(Originalb)
+% disp('Originalf = ')
+% disp(Originalf)
+% disp('Finalf = ')
+% disp(Finalf)
+% disp('ss =')
+% disp(ss)
 %disp('s =')
 %disp(s)
 
@@ -184,12 +184,14 @@ totalmovepacketradio(loop)=sum(abs(ss))/sum(Originalf);
 % disp(s);
 % disp('ss=');
 % disp(ss);
-disp('totallostpacketradio=');
-disp(totallostpacketradio(loop));
-disp('totalmovepacketradio=');
-disp(totalmovepacketradio(loop));
-disp('H=');
-disp(H(loop));
+
+% disp('totallostpacketradio=');
+% disp(totallostpacketradio(loop));
+% disp('totalmovepacketradio=');
+% disp(totalmovepacketradio(loop));
+% disp('H=');
+% disp(H(loop));
+
 % disp('hop=');
 % disp(hop);
 % disp('Maxhop=');
