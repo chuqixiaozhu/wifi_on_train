@@ -47,8 +47,8 @@ for i=1:rhk
     rhs(i)=rhFinalb(i)-rhFinalf(i);
 end;
 
-disp('oldrhs=');
-disp(rhs);
+% disp('oldrhs=');
+% disp(rhs);
 
 for i=1:rhk
     j=i+1;
@@ -86,17 +86,17 @@ rhtotalmovepacketradio(rhloop)=rhtotalmovepacket/sum(rhOriginalf);
 
 % disp('rhFinalf=');
 % disp(rhFinalf);
-disp('rhs=');
-disp(rhs);
+% disp('rhs=');
+% disp(rhs);
 % disp('rhtotallostpacket=');
 % disp(rhtotallostpacket);
-disp('rhtotallostpacketradio=');
-disp(rhtotallostpacketradio(rhloop));
+% disp('rhtotallostpacketradio=');
+% disp(rhtotallostpacketradio(rhloop));
 % disp('rhtotalmovepacket=');
 % disp(rhtotalmovepacket);
-disp('rhtotalmovepacketradio=');
-disp(rhtotalmovepacketradio(rhloop));
-disp('rhH=');
-disp(rhH(rhloop));
+% disp('rhtotalmovepacketradio=');
+% disp(rhtotalmovepacketradio(rhloop));
+% disp('rhH=');
+% disp(rhH(rhloop));
 
 end;
