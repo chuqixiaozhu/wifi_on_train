@@ -18,7 +18,7 @@ lost_file = fopen('flow-csf_vs_lost.txt', 'w');
 move_file = fopen('flow-csf_vs_move.txt', 'w');
 hop_file = fopen('flow-csf_vs_hop.txt', 'w');
 fprintf('Please wait');
-for flow_avg = 90:2:110
+for flow_avg = 90:100
     csf(flow_avg, bandwidth_avg, k, loop_max);
     lost = sum(totallostpacketradio) / loop_max;
     move = sum(totalmovepacketradio) / loop_max;

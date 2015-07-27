@@ -6,10 +6,10 @@ function csf(flow_avg, bandwidth_avg, k, loop_max)
 %Output:s1,s2,...,sk
 
 if nargin < 1
-    flow_avg = 50;
+    flow_avg = 100;
 end
 if nargin < 2
-    bandwidth_avg = 50;
+    bandwidth_avg = 100;
 end
 if nargin < 3
     k = 20;

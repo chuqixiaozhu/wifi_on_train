@@ -1,7 +1,7 @@
 %!PS-Adobe-2.0 EPSF-2.0
-%%Title: flow_vs_hop.eps
+%%Title: flow_vs_move.eps
 %%Creator: gnuplot 5.1 patchlevel 0
-%%CreationDate: Mon Jul 27 09:01:50 2015
+%%CreationDate: Mon Jul 27 09:52:58 2015
 %%DocumentFonts: (atend)
 %%BoundingBox: 50 50 410 302
 %%EndComments
@@ -463,13 +463,13 @@ systemdict /pdfmark known not {
   userdict /pdfmark systemdict /cleartomark get put
 } if
 SDict begin [
-  /Title (flow_vs_hop.eps)
+  /Title (flow_vs_move.eps)
   /Subject (gnuplot plot)
   /Creator (gnuplot 5.1 patchlevel 0)
   /Author (Piglet)
 %  /Producer (gnuplot)
 %  /Keywords ()
-  /CreationDate (Mon Jul 27 09:01:50 2015)
+  /CreationDate (Mon Jul 27 09:52:58 2015)
   /DOCINFO pdfmark
 end
 } ifelse
@@ -548,7 +548,7 @@ LCb setrgbcolor
 -63 0 V
 stroke
 686 1333 M
-[ [(Helvetica) 140.0 0.0 true true 0 (2.00)]
+[ [(Helvetica) 140.0 0.0 true true 0 (3.00)]
 ] -46.7 MRshow
 1.000 UL
 LTb
@@ -568,7 +568,7 @@ LCb setrgbcolor
 -63 0 V
 stroke
 686 2217 M
-[ [(Helvetica) 140.0 0.0 true true 0 (4.00)]
+[ [(Helvetica) 140.0 0.0 true true 0 (6.00)]
 ] -46.7 MRshow
 1.000 UL
 LTb
@@ -588,7 +588,7 @@ LCb setrgbcolor
 -63 0 V
 stroke
 686 3102 M
-[ [(Helvetica) 140.0 0.0 true true 0 (6.00)]
+[ [(Helvetica) 140.0 0.0 true true 0 (9.00)]
 ] -46.7 MRshow
 1.000 UL
 LTb
@@ -608,7 +608,7 @@ LCb setrgbcolor
 -63 0 V
 stroke
 686 3986 M
-[ [(Helvetica) 140.0 0.0 true true 0 (8.00)]
+[ [(Helvetica) 140.0 0.0 true true 0 (12.00)]
 ] -46.7 MRshow
 1.000 UL
 LTb
@@ -628,7 +628,7 @@ LCb setrgbcolor
 -63 0 V
 stroke
 686 4871 M
-[ [(Helvetica) 140.0 0.0 true true 0 (10.00)]
+[ [(Helvetica) 140.0 0.0 true true 0 (15.00)]
 ] -46.7 MRshow
 1.000 UL
 LTb
@@ -797,7 +797,9 @@ LCb setrgbcolor
 LTa
 LCa setrgbcolor
 5712 448 M
-0 4423 V
+0 3940 V
+0 420 R
+0 63 V
 stroke
 1.000 UL
 LTb
@@ -817,8 +819,8 @@ LCb setrgbcolor
 LTa
 LCa setrgbcolor
 6329 448 M
-0 4080 V
-0 280 R
+0 3940 V
+0 420 R
 0 63 V
 stroke
 1.000 UL
@@ -871,7 +873,7 @@ LCb setrgbcolor
 LCb setrgbcolor
 112 2659 M
 currentpoint gsave translate -270 rotate 0 0 moveto
-[ [(Helvetica) 140.0 0.0 true true 0 (Maximum Shifting Hop)]
+[ [(Helvetica) 140.0 0.0 true true 0 (Packet Move Rate \(%\))]
 ] -46.7 MCshow
 grestore
 LTb
@@ -883,18 +885,18 @@ LTb
 1.000 UL
 LTb
 LCb setrgbcolor
-5792 4528 N
-0 280 V
-1071 0 V
-0 -280 V
--1071 0 V
+5540 4388 N
+0 420 V
+1323 0 V
+0 -420 V
+-1323 0 V
 Z stroke
 % Begin plot #1
 2.000 UP
 2.000 UL
 LTb
 0.58 0.00 0.83 C LCb setrgbcolor
-5792 4738 M
+5540 4738 M
 [ [(Helvetica) 140.0 0.0 true true 0 (CSF)]
 ] -46.7 MLshow
 2.000 UP
@@ -902,18 +904,28 @@ LTb
 LTb
 0.58 0.00 0.83 C 6380 4738 M
 399 0 V
-770 887 M
-1235 2 V
-1236 1 V
-1235 1 V
-1236 1 V
-1235 -2 V
-770 887 BoxF
-2005 889 BoxF
-3241 890 BoxF
-4476 891 BoxF
-5712 892 BoxF
-6947 890 BoxF
+770 1542 M
+618 171 V
+617 281 V
+618 295 V
+618 457 V
+618 237 V
+617 511 V
+618 413 V
+618 138 V
+617 172 V
+618 -10 V
+770 1542 BoxF
+1388 1713 BoxF
+2005 1994 BoxF
+2623 2289 BoxF
+3241 2746 BoxF
+3859 2983 BoxF
+4476 3494 BoxF
+5094 3907 BoxF
+5712 4045 BoxF
+6329 4217 BoxF
+6947 4207 BoxF
 6579 4738 BoxF
 % End plot #1
 % Begin plot #2
@@ -921,7 +933,7 @@ LTb
 2.000 UL
 LTb
 0.00 0.62 0.45 C LCb setrgbcolor
-5792 4598 M
+5540 4598 M
 [ [(Helvetica) 140.0 0.0 true true 0 (Greedy)]
 ] -46.7 MLshow
 2.000 UP
@@ -929,20 +941,67 @@ LTb
 LTb
 0.00 0.62 0.45 C 6380 4598 M
 399 0 V
-770 1532 M
-1235 382 V
-1236 566 V
-1235 706 V
-1236 773 V
-1235 635 V
-770 1532 Crs
-2005 1914 Crs
-3241 2480 Crs
-4476 3186 Crs
-5712 3959 Crs
-6947 4594 Crs
+770 1054 M
+618 76 V
+617 98 V
+618 57 V
+618 99 V
+618 102 V
+617 73 V
+618 91 V
+618 36 V
+617 47 V
+618 0 V
+770 1054 Crs
+1388 1130 Crs
+2005 1228 Crs
+2623 1285 Crs
+3241 1384 Crs
+3859 1486 Crs
+4476 1559 Crs
+5094 1650 Crs
+5712 1686 Crs
+6329 1733 Crs
+6947 1733 Crs
 6579 4598 Crs
 % End plot #2
+% Begin plot #3
+2.000 UP
+2.000 UL
+LTb
+0.34 0.71 0.91 C LCb setrgbcolor
+5540 4458 M
+[ [(Helvetica) 140.0 0.0 true true 0 (Righthand)]
+] -46.7 MLshow
+2.000 UP
+2.000 UL
+LTb
+0.34 0.71 0.91 C 6380 4458 M
+399 0 V
+770 997 M
+618 51 V
+617 73 V
+618 71 V
+618 75 V
+618 67 V
+617 52 V
+618 46 V
+618 43 V
+617 -10 V
+618 2 V
+770 997 Star
+1388 1048 Star
+2005 1121 Star
+2623 1192 Star
+3241 1267 Star
+3859 1334 Star
+4476 1386 Star
+5094 1432 Star
+5712 1475 Star
+6329 1465 Star
+6947 1467 Star
+6579 4458 Star
+% End plot #3
 2.000 UL
 LTb
 LCb setrgbcolor
