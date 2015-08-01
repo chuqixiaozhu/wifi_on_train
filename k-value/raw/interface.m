@@ -10,8 +10,8 @@ global rtotallostpacketradio;
 time = datestr(now, 'yyyymmdd-HHMMSS');
 system(['mkdir ', time]);
 
-flow_avg = 100;
-bandwidth_avg = 100;
+flow_avg = 10;
+bandwidth_avg = 10;
 rk = 20;
 
 lost_file = fopen('k-raw_vs_lost.txt', 'w');

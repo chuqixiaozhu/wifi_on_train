@@ -10,8 +10,8 @@ global gtotalmovepacketradio;
 time = datestr(now, 'yyyymmdd-HHMMSS');
 system(['mkdir ', time]);
 
-flow_avg = 100;
-bandwidth_avg = 100;
+flow_avg = 10;
+bandwidth_avg = 10;
 gk = 20;
 
 lost_file = fopen('k-greedy_vs_lost.txt', 'w');

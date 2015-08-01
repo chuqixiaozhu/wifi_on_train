@@ -10,8 +10,8 @@ global rhtotalmovepacketradio;
 time = datestr(now, 'yyyymmdd-HHMMSS');
 system(['mkdir ', time]);
 
-flow_avg = 100;
-bandwidth_avg = 100;
+flow_avg = 10;
+bandwidth_avg = 10;
 rhk = 20;
 
 lost_file = fopen('k-righthand_vs_lost.txt', 'w');
